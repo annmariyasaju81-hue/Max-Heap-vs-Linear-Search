@@ -1,0 +1,16 @@
+PERFORMANCE COMPARISON
+
+Operation                         Max Heap          Linear Search
+-----------------------------------------------------------------
+Find maximum                     O(1)              O(n)
+Insert a new score               O(log n)          O(1) append*
+Maintain maximum automatically   Yes               No
+Space complexity                 O(n)              O(1)
+
+*Appending to a normal array/list is O(1) amortized when capacity is available;
+the maximum must still be found separately if it is not maintained.
+
+Given data: 78, 92, 65, 88, 95, 72, 84, 90
+Maximum: 95
+Linear Search comparisons: 7
+Max Heap maximum: root = 95

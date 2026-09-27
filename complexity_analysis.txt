@@ -1,0 +1,21 @@
+COMPLEXITY ANALYSIS
+
+Max Heap:
+- Insertion: O(log n)
+- Finding maximum: O(1)
+- Building by repeated insertion: O(n log n)
+- Space: O(n)
+
+Linear Search:
+- Finding maximum: O(n)
+- Space: O(1)
+
+For the given 8 scores:
+- Max Heap maximum: 95 (root access; no comparison needed after construction)
+- Linear Search maximum: 95 (7 comparisons)
+
+Note:
+For finding the maximum only once in a small unsorted list, linear search is simpler.
+For continuously maintaining the highest score with repeated insertions and maximum
+queries, a Max Heap is more suitable because insertion is O(log n) and maximum
+retrieval is O(1).
